@@ -4,7 +4,7 @@ Bitget AI Grid Crypto Bot
 
 You must pay for using this bot:
 - Anthropic api access key (about 50$ - 100$ monthly) or change code to your prefered AI agent
-- Coingecko api key (Basic plan 29$/m for up to 60 currency pari)
+- Coingecko api key (Basic plan 29$/m for up to 60 currency pair)
 
 <img width="976" height="978" alt="obraz" src="https://github.com/user-attachments/assets/21564061-75d1-477a-a961-9dad753c85bf" />
 
