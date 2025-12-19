@@ -1,0 +1,84 @@
+# Grid Bot V2 - Main Configuration
+# Copy this file to config.yaml and fill in your API keys
+
+# Exchange settings
+exchange: bitget
+paper_trading: false  # Set to true for testing without real money
+
+# API credentials (get from Bitget)
+api_key: "YOUR_API_KEY"
+api_secret: "YOUR_API_SECRET"
+passphrase: "YOUR_PASSPHRASE"
+
+# Bot settings
+update_interval: 10  # seconds between updates
+log_level: INFO
+web_port: 80  # Dashboard port
+
+# Dynamic order placement
+max_orders_per_side: 1  # Max orders per side (1 BUY + 1 SELL per pair)
+
+# Auto-adjust settings
+auto_adjust:
+  enabled: true
+  rebuild_on_exit: true
+  exit_buffer_percent: 1.0
+  scheduled_check_hours: 6
+  rebuild_on_inefficiency: true
+  inefficiency_threshold: 70
+  min_grid_age_minutes: 60
+  volatility_lookback_hours: 24
+  volatility_multiplier: 2.0
+  min_range_percent: 5
+  max_range_percent: 30
+  close_position_on_rebuild: false
+  min_rebuild_interval_minutes: 30
+
+# Auto-optimize settings
+auto_optimize:
+  enabled: true
+  optimize_interval_hours: 4
+  min_confidence: 60
+  auto_apply: true
+  optimize_mode: true
+  optimize_range: true
+  optimize_levels: true
+  optimize_min_profit: true
+  optimize_spacing: true
+  max_range_change_percent: 50
+  max_level_change: 10
+  reallocate_capital: false
+  reallocation_interval_hours: 24
+
+# AI Analysis settings
+ai:
+  enabled: true
+  claude_api_key: "YOUR_CLAUDE_API_KEY"  # Optional - for advanced AI analysis
+  model: "claude-sonnet-4-20250514"
+  coingecko_api_key: "YOUR_COINGECKO_API_KEY"  # Get free key from coingecko.com
+  cryptocompare_api_key: ""
+  news_enabled: true
+  news_lookback_hours: 24
+  news_update_interval_minutes: 30
+  regime_enabled: true
+  regime_update_interval_minutes: 15
+  auto_adjust_mode: true
+  auto_adjust_range: true
+  min_confidence: 0.7
+
+# Notifications (optional)
+notifications:
+  discord_enabled: false
+  discord_webhook_url: ""
+  telegram_enabled: false
+  telegram_bot_token: ""
+  telegram_chat_id: ""
+  notify_trades: true
+  notify_rebuilds: true
+  notify_optimizations: true
+  notify_errors: true
+  notify_daily_summary: true
+  notify_risk_alerts: true
+  min_interval_seconds: 5
+  batch_trades: true
+  batch_interval_seconds: 60

@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Bot files - KEEP THESE PRIVATE!
+config.yaml
+configs/*.yaml
+!configs/*.yaml.example
+*.db
+*.sqlite
+*.log
+logs/*.log
+
+# Paper trading state
+paper_state.json
+
+# Backups
+backups/
+*.backup
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets - NEVER COMMIT!
+*.key
+*.pem
+.env
