@@ -1,0 +1,22 @@
+# Example pair configuration
+# Copy this file to configs/BTCUSDT.yaml (or any pair)
+
+pair: BTCUSDT
+enabled: true
+
+# Capital and leverage
+total_capital: 50      # USD per pair
+leverage: 5            # 5x leverage
+
+# Grid settings
+grid_levels: 15        # Number of price levels
+grid_spacing: arithmetic  # arithmetic or geometric
+range_percent: 10      # Grid range as % of price
+
+# Profit settings
+min_profit_percent: 0.3  # Minimum profit per trade
+
+# Optional overrides (uncomment to use)
+# max_orders_per_side: 1  # Override global setting
+# upper_price: 100000     # Fixed upper price
+# lower_price: 90000      # Fixed lower price
